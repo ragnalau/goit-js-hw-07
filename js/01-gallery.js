@@ -38,13 +38,13 @@ function onGalleryClick(e){
 
     instance.show();
 
-    function escapeClose(e){
+    function closeLightbox(e){
         if(e.key === 'Escape'){
             instance.close();
-            document.removeEventListener('keydown', escapeClose);
+            document.removeEventListener('keydown', closeLightbox);
         }
     }
-    document.addEventListener('keydown', escapeClose);
+    document.addEventListener('keydown', closeLightbox);
 }
 
 
